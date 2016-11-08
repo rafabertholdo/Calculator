@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA7088961DD0EB0D008E601B /* CalculatorBrainCpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA7088941DD0EB0D008E601B /* CalculatorBrainCpp.cpp */; };
+		DA07C8251DD2659100C39142 /* libCalculatorLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA07C8221DD2657F00C39142 /* libCalculatorLib.a */; };
 		DA7088991DD10090008E601B /* CppViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = DA7088981DD10090008E601B /* CppViewController.mm */; };
 		DAA0AB381DC21902004E05F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA0AB371DC21902004E05F1 /* main.m */; };
 		DAA0AB3B1DC21902004E05F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA0AB3A1DC21902004E05F1 /* AppDelegate.m */; };
@@ -18,12 +18,29 @@
 		DAAC388A1DC276F7005CCA67 /* Operation.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAC38891DC276F7005CCA67 /* Operation.m */; };
 		DAAC388D1DC28AA6005CCA67 /* PendingBinaryOperationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAC388C1DC28AA6005CCA67 /* PendingBinaryOperationInfo.m */; };
 		DABDF7631DC2394400B84515 /* CalculatorBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = DABDF7621DC2394400B84515 /* CalculatorBrain.m */; };
-		DAE9D9CF1DD1097600CF9464 /* PendingBinaryInformationInfoCpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DAE9D9CD1DD1097600CF9464 /* PendingBinaryInformationInfoCpp.cpp */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DA07C8211DD2657F00C39142 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA07C81C1DD2657F00C39142 /* CalculatorLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA07C7F21DD25F5300C39142;
+			remoteInfo = CalculatorLib;
+		};
+		DA07C8231DD2658600C39142 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA07C81C1DD2657F00C39142 /* CalculatorLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DA07C7F11DD25F5300C39142;
+			remoteInfo = CalculatorLib;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		DA7088941DD0EB0D008E601B /* CalculatorBrainCpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CalculatorBrainCpp.cpp; sourceTree = "<group>"; };
-		DA7088951DD0EB0D008E601B /* CalculatorBrainCpp.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CalculatorBrainCpp.hpp; sourceTree = "<group>"; };
+		DA07C81C1DD2657F00C39142 /* CalculatorLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CalculatorLib.xcodeproj; sourceTree = "<group>"; };
+		DA07C8261DD2684F00C39142 /* PendingBinaryInformationInfoCpp.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PendingBinaryInformationInfoCpp.hpp; sourceTree = "<group>"; };
+		DA07C8271DD2685600C39142 /* CalculatorBrainCpp.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CalculatorBrainCpp.hpp; sourceTree = "<group>"; };
 		DA7088971DD10090008E601B /* CppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CppViewController.h; sourceTree = "<group>"; };
 		DA7088981DD10090008E601B /* CppViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CppViewController.mm; sourceTree = "<group>"; };
 		DAA0AB331DC21902004E05F1 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,8 +59,6 @@
 		DAAC388C1DC28AA6005CCA67 /* PendingBinaryOperationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PendingBinaryOperationInfo.m; sourceTree = "<group>"; };
 		DABDF7611DC2394400B84515 /* CalculatorBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorBrain.h; sourceTree = "<group>"; };
 		DABDF7621DC2394400B84515 /* CalculatorBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorBrain.m; sourceTree = "<group>"; };
-		DAE9D9CD1DD1097600CF9464 /* PendingBinaryInformationInfoCpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PendingBinaryInformationInfoCpp.cpp; sourceTree = "<group>"; };
-		DAE9D9CE1DD1097600CF9464 /* PendingBinaryInformationInfoCpp.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PendingBinaryInformationInfoCpp.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,15 +66,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA07C8251DD2659100C39142 /* libCalculatorLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA07C81D1DD2657F00C39142 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA07C8221DD2657F00C39142 /* libCalculatorLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		DAA0AB2A1DC21902004E05F1 = {
 			isa = PBXGroup;
 			children = (
+				DA07C81C1DD2657F00C39142 /* CalculatorLib.xcodeproj */,
 				DAA0AB351DC21902004E05F1 /* Calculator */,
 				DAA0AB341DC21902004E05F1 /* Products */,
 			);
@@ -89,7 +114,6 @@
 				DAA0AB471DC21902004E05F1 /* Info.plist */,
 				DAA0AB361DC21902004E05F1 /* Supporting Files */,
 			);
-			name = Calculator;
 			path = Calculator;
 			sourceTree = "<group>";
 		};
@@ -104,16 +128,14 @@
 		DAD29E1F1DC219AC00829D89 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DA07C8261DD2684F00C39142 /* PendingBinaryInformationInfoCpp.hpp */,
+				DA07C8271DD2685600C39142 /* CalculatorBrainCpp.hpp */,
 				DABDF7611DC2394400B84515 /* CalculatorBrain.h */,
 				DABDF7621DC2394400B84515 /* CalculatorBrain.m */,
 				DAAC38881DC276F7005CCA67 /* Operation.h */,
 				DAAC38891DC276F7005CCA67 /* Operation.m */,
 				DAAC388B1DC28AA6005CCA67 /* PendingBinaryOperationInfo.h */,
 				DAAC388C1DC28AA6005CCA67 /* PendingBinaryOperationInfo.m */,
-				DA7088941DD0EB0D008E601B /* CalculatorBrainCpp.cpp */,
-				DA7088951DD0EB0D008E601B /* CalculatorBrainCpp.hpp */,
-				DAE9D9CD1DD1097600CF9464 /* PendingBinaryInformationInfoCpp.cpp */,
-				DAE9D9CE1DD1097600CF9464 /* PendingBinaryInformationInfoCpp.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -132,6 +154,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				DA07C8241DD2658600C39142 /* PBXTargetDependency */,
 			);
 			name = Calculator;
 			productName = Calculator;
@@ -164,12 +187,28 @@
 			mainGroup = DAA0AB2A1DC21902004E05F1;
 			productRefGroup = DAA0AB341DC21902004E05F1 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DA07C81D1DD2657F00C39142 /* Products */;
+					ProjectRef = DA07C81C1DD2657F00C39142 /* CalculatorLib.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DAA0AB321DC21902004E05F1 /* Calculator */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DA07C8221DD2657F00C39142 /* libCalculatorLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCalculatorLib.a;
+			remoteRef = DA07C8211DD2657F00C39142 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DAA0AB311DC21902004E05F1 /* Resources */ = {
@@ -194,14 +233,20 @@
 				DAA0AB3E1DC21902004E05F1 /* ViewController.m in Sources */,
 				DAA0AB3B1DC21902004E05F1 /* AppDelegate.m in Sources */,
 				DAAC388A1DC276F7005CCA67 /* Operation.m in Sources */,
-				DAE9D9CF1DD1097600CF9464 /* PendingBinaryInformationInfoCpp.cpp in Sources */,
 				DABDF7631DC2394400B84515 /* CalculatorBrain.m in Sources */,
-				DA7088961DD0EB0D008E601B /* CalculatorBrainCpp.cpp in Sources */,
 				DAA0AB381DC21902004E05F1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA07C8241DD2658600C39142 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CalculatorLib;
+			targetProxy = DA07C8231DD2658600C39142 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DAA0AB3F1DC21902004E05F1 /* Main.storyboard */ = {
@@ -319,6 +364,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelgb.calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -330,6 +380,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelgb.calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

@@ -4,25 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>UniversalLib.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
-		<key>objectOrientedClass.xcscheme</key>
+		<key>CalculatorLib.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>UniversalLibrary.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>DA07C7E21DD251AC00C39142</key>
+		<key>DA07C7F11DD25F5300C39142</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DAA0AB321DC21902004E05F1</key>
+		<key>DA07C8041DD25FA600C39142</key>
 		<dict>
 			<key>primary</key>
 			<true/>

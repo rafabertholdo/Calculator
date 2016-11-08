@@ -386,6 +386,7 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
                                                         <connections>
+                                                            <action selector="performOperation:" destination="961-tJ-7h3" eventType="touchUpInside" id="Uut-8k-mKr"/>
                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X6H-rq-hgw"/>
                                                         </connections>
                                                     </button>
@@ -420,6 +421,9 @@
                                                         <state key="normal" title="+">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="performOperation:" destination="961-tJ-7h3" eventType="touchUpInside" id="fex-uc-Xw7"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBp-kv-lw6">
                                                         <rect key="frame" x="282.5" y="0.0" width="60.5" height="92.5"/>
@@ -430,6 +434,7 @@
                                                         </state>
                                                         <connections>
                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iMQ-TM-b5z"/>
+                                                            <action selector="performOperation:" destination="961-tJ-7h3" eventType="touchUpInside" id="yar-ZU-dif"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -443,6 +448,9 @@
                                                         <state key="normal" title="x!">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="performOperation:" destination="961-tJ-7h3" eventType="touchUpInside" id="HoA-C9-NaH"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnr-f6-nac">
                                                         <rect key="frame" x="70.5" y="0.0" width="60.5" height="92.5"/>
@@ -500,6 +508,7 @@
                                                         </state>
                                                         <connections>
                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TV7-SE-fYQ"/>
+                                                            <action selector="performOperation:" destination="961-tJ-7h3" eventType="touchUpInside" id="zCY-7E-TqP"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghi-G6-Rzp">
@@ -556,6 +565,7 @@
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
                                                         <connections>
+                                                            <action selector="saveProgram" destination="961-tJ-7h3" eventType="touchUpInside" id="Gse-ZX-cff"/>
                                                             <action selector="saveProgram" destination="BYZ-38-t0r" eventType="touchUpInside" id="sis-PR-HUm"/>
                                                         </connections>
                                                     </button>
@@ -566,6 +576,7 @@
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
                                                         <connections>
+                                                            <action selector="performOperation:" destination="961-tJ-7h3" eventType="touchUpInside" id="6YB-X2-LV7"/>
                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CDM-r1-xjq"/>
                                                         </connections>
                                                     </button>
@@ -613,6 +624,7 @@
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
                                                         <connections>
+                                                            <action selector="loadProgram" destination="961-tJ-7h3" eventType="touchUpInside" id="IBX-nt-wcI"/>
                                                             <action selector="loadProgram" destination="BYZ-38-t0r" eventType="touchUpInside" id="mTz-1Y-aGy"/>
                                                         </connections>
                                                     </button>
@@ -624,6 +636,7 @@
                                                         </state>
                                                         <connections>
                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7AP-5L-XSe"/>
+                                                            <action selector="performOperation:" destination="961-tJ-7h3" eventType="touchUpInside" id="UJ4-w1-aII"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Yo-DL-pmg">
