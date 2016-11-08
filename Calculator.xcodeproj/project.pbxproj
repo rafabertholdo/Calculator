@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA7088961DD0EB0D008E601B /* CalculatorBrainCpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA7088941DD0EB0D008E601B /* CalculatorBrainCpp.cpp */; };
+		DA7088991DD10090008E601B /* CppViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = DA7088981DD10090008E601B /* CppViewController.mm */; };
 		DAA0AB381DC21902004E05F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA0AB371DC21902004E05F1 /* main.m */; };
 		DAA0AB3B1DC21902004E05F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA0AB3A1DC21902004E05F1 /* AppDelegate.m */; };
 		DAA0AB3E1DC21902004E05F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA0AB3D1DC21902004E05F1 /* ViewController.m */; };
 		DAA0AB411DC21902004E05F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA0AB3F1DC21902004E05F1 /* Main.storyboard */; };
 		DAA0AB431DC21902004E05F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA0AB421DC21902004E05F1 /* Assets.xcassets */; };
 		DAA0AB461DC21902004E05F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA0AB441DC21902004E05F1 /* LaunchScreen.storyboard */; };
+		DAAC388A1DC276F7005CCA67 /* Operation.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAC38891DC276F7005CCA67 /* Operation.m */; };
+		DAAC388D1DC28AA6005CCA67 /* PendingBinaryOperationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAC388C1DC28AA6005CCA67 /* PendingBinaryOperationInfo.m */; };
+		DABDF7631DC2394400B84515 /* CalculatorBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = DABDF7621DC2394400B84515 /* CalculatorBrain.m */; };
+		DAE9D9CF1DD1097600CF9464 /* PendingBinaryInformationInfoCpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DAE9D9CD1DD1097600CF9464 /* PendingBinaryInformationInfoCpp.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA7088941DD0EB0D008E601B /* CalculatorBrainCpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CalculatorBrainCpp.cpp; sourceTree = "<group>"; };
+		DA7088951DD0EB0D008E601B /* CalculatorBrainCpp.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CalculatorBrainCpp.hpp; sourceTree = "<group>"; };
+		DA7088971DD10090008E601B /* CppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CppViewController.h; sourceTree = "<group>"; };
+		DA7088981DD10090008E601B /* CppViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CppViewController.mm; sourceTree = "<group>"; };
 		DAA0AB331DC21902004E05F1 /* objectOrientedClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = objectOrientedClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA0AB371DC21902004E05F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DAA0AB391DC21902004E05F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +36,14 @@
 		DAA0AB421DC21902004E05F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAA0AB451DC21902004E05F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAA0AB471DC21902004E05F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAAC38881DC276F7005CCA67 /* Operation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Operation.h; sourceTree = "<group>"; };
+		DAAC38891DC276F7005CCA67 /* Operation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Operation.m; sourceTree = "<group>"; };
+		DAAC388B1DC28AA6005CCA67 /* PendingBinaryOperationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PendingBinaryOperationInfo.h; sourceTree = "<group>"; };
+		DAAC388C1DC28AA6005CCA67 /* PendingBinaryOperationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PendingBinaryOperationInfo.m; sourceTree = "<group>"; };
+		DABDF7611DC2394400B84515 /* CalculatorBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorBrain.h; sourceTree = "<group>"; };
+		DABDF7621DC2394400B84515 /* CalculatorBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorBrain.m; sourceTree = "<group>"; };
+		DAE9D9CD1DD1097600CF9464 /* PendingBinaryInformationInfoCpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PendingBinaryInformationInfoCpp.cpp; sourceTree = "<group>"; };
+		DAE9D9CE1DD1097600CF9464 /* PendingBinaryInformationInfoCpp.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PendingBinaryInformationInfoCpp.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +76,13 @@
 		DAA0AB351DC21902004E05F1 /* objectOrientedClass */ = {
 			isa = PBXGroup;
 			children = (
+				DAD29E1F1DC219AC00829D89 /* Model */,
 				DAA0AB391DC21902004E05F1 /* AppDelegate.h */,
 				DAA0AB3A1DC21902004E05F1 /* AppDelegate.m */,
 				DAA0AB3C1DC21902004E05F1 /* ViewController.h */,
 				DAA0AB3D1DC21902004E05F1 /* ViewController.m */,
+				DA7088971DD10090008E601B /* CppViewController.h */,
+				DA7088981DD10090008E601B /* CppViewController.mm */,
 				DAA0AB3F1DC21902004E05F1 /* Main.storyboard */,
 				DAA0AB421DC21902004E05F1 /* Assets.xcassets */,
 				DAA0AB441DC21902004E05F1 /* LaunchScreen.storyboard */,
@@ -77,6 +98,23 @@
 				DAA0AB371DC21902004E05F1 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAD29E1F1DC219AC00829D89 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DABDF7611DC2394400B84515 /* CalculatorBrain.h */,
+				DABDF7621DC2394400B84515 /* CalculatorBrain.m */,
+				DAAC38881DC276F7005CCA67 /* Operation.h */,
+				DAAC38891DC276F7005CCA67 /* Operation.m */,
+				DAAC388B1DC28AA6005CCA67 /* PendingBinaryOperationInfo.h */,
+				DAAC388C1DC28AA6005CCA67 /* PendingBinaryOperationInfo.m */,
+				DA7088941DD0EB0D008E601B /* CalculatorBrainCpp.cpp */,
+				DA7088951DD0EB0D008E601B /* CalculatorBrainCpp.hpp */,
+				DAE9D9CD1DD1097600CF9464 /* PendingBinaryInformationInfoCpp.cpp */,
+				DAE9D9CE1DD1097600CF9464 /* PendingBinaryInformationInfoCpp.hpp */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,8 +188,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA7088991DD10090008E601B /* CppViewController.mm in Sources */,
+				DAAC388D1DC28AA6005CCA67 /* PendingBinaryOperationInfo.m in Sources */,
 				DAA0AB3E1DC21902004E05F1 /* ViewController.m in Sources */,
 				DAA0AB3B1DC21902004E05F1 /* AppDelegate.m in Sources */,
+				DAAC388A1DC276F7005CCA67 /* Operation.m in Sources */,
+				DAE9D9CF1DD1097600CF9464 /* PendingBinaryInformationInfoCpp.cpp in Sources */,
+				DABDF7631DC2394400B84515 /* CalculatorBrain.m in Sources */,
+				DA7088961DD0EB0D008E601B /* CalculatorBrainCpp.cpp in Sources */,
 				DAA0AB381DC21902004E05F1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +353,7 @@
 				DAA0AB4C1DC21902004E05F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
