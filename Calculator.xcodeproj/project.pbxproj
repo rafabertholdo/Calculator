@@ -26,7 +26,7 @@
 		DA7088951DD0EB0D008E601B /* CalculatorBrainCpp.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CalculatorBrainCpp.hpp; sourceTree = "<group>"; };
 		DA7088971DD10090008E601B /* CppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CppViewController.h; sourceTree = "<group>"; };
 		DA7088981DD10090008E601B /* CppViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CppViewController.mm; sourceTree = "<group>"; };
-		DAA0AB331DC21902004E05F1 /* objectOrientedClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = objectOrientedClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA0AB331DC21902004E05F1 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA0AB371DC21902004E05F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DAA0AB391DC21902004E05F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DAA0AB3A1DC21902004E05F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 		DAA0AB2A1DC21902004E05F1 = {
 			isa = PBXGroup;
 			children = (
-				DAA0AB351DC21902004E05F1 /* objectOrientedClass */,
+				DAA0AB351DC21902004E05F1 /* Calculator */,
 				DAA0AB341DC21902004E05F1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,12 +68,12 @@
 		DAA0AB341DC21902004E05F1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DAA0AB331DC21902004E05F1 /* objectOrientedClass.app */,
+				DAA0AB331DC21902004E05F1 /* Calculator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DAA0AB351DC21902004E05F1 /* objectOrientedClass */ = {
+		DAA0AB351DC21902004E05F1 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
 				DAD29E1F1DC219AC00829D89 /* Model */,
@@ -89,7 +89,8 @@
 				DAA0AB471DC21902004E05F1 /* Info.plist */,
 				DAA0AB361DC21902004E05F1 /* Supporting Files */,
 			);
-			path = objectOrientedClass;
+			name = Calculator;
+			path = Calculator;
 			sourceTree = "<group>";
 		};
 		DAA0AB361DC21902004E05F1 /* Supporting Files */ = {
@@ -120,9 +121,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DAA0AB321DC21902004E05F1 /* objectOrientedClass */ = {
+		DAA0AB321DC21902004E05F1 /* Calculator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DAA0AB4A1DC21902004E05F1 /* Build configuration list for PBXNativeTarget "objectOrientedClass" */;
+			buildConfigurationList = DAA0AB4A1DC21902004E05F1 /* Build configuration list for PBXNativeTarget "Calculator" */;
 			buildPhases = (
 				DAA0AB2F1DC21902004E05F1 /* Sources */,
 				DAA0AB301DC21902004E05F1 /* Frameworks */,
@@ -132,9 +133,9 @@
 			);
 			dependencies = (
 			);
-			name = objectOrientedClass;
+			name = Calculator;
 			productName = objectOrientedClass;
-			productReference = DAA0AB331DC21902004E05F1 /* objectOrientedClass.app */;
+			productReference = DAA0AB331DC21902004E05F1 /* Calculator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -152,7 +153,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DAA0AB2E1DC21902004E05F1 /* Build configuration list for PBXProject "objectOrientedClass" */;
+			buildConfigurationList = DAA0AB2E1DC21902004E05F1 /* Build configuration list for PBXProject "Calculator" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -165,7 +166,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DAA0AB321DC21902004E05F1 /* objectOrientedClass */,
+				DAA0AB321DC21902004E05F1 /* Calculator */,
 			);
 		};
 /* End PBXProject section */
@@ -318,7 +319,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = objectOrientedClass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelgb.objectOrientedClass;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelgb.calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -329,7 +330,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = objectOrientedClass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelgb.objectOrientedClass;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelgb.calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -337,7 +338,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DAA0AB2E1DC21902004E05F1 /* Build configuration list for PBXProject "objectOrientedClass" */ = {
+		DAA0AB2E1DC21902004E05F1 /* Build configuration list for PBXProject "Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DAA0AB481DC21902004E05F1 /* Debug */,
@@ -346,7 +347,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DAA0AB4A1DC21902004E05F1 /* Build configuration list for PBXNativeTarget "objectOrientedClass" */ = {
+		DAA0AB4A1DC21902004E05F1 /* Build configuration list for PBXNativeTarget "Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DAA0AB4B1DC21902004E05F1 /* Debug */,

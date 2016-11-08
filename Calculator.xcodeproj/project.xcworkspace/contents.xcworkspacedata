@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:objectOrientedClass.xcodeproj">
+      location = "self:/Users/rafaelgb/Developer/objectOrientedClass/Calculator.xcodeproj">
    </FileRef>
 </Workspace>
