@@ -13,18 +13,27 @@ CalculatorBrainCpp::CalculatorBrainCpp():_internalProgram(){
     _expression = "";
     _internalProgram = vector<string>();
     
-    _operations["π"] = make_tuple(OperationType::Constant, [](double a, double b) {
-        return M_PI;
-    });
-    _operations["√"] = make_tuple(OperationType::UnaryOperation, [](double a, double b) {
-        return sqrt(a);
-    });
-    _operations["×"] = make_tuple(OperationType::BinaryOperation, [](double a, double b) {
-        return a * b;
-    });
-    _operations["="] = make_tuple(OperationType::Equals, [](double a, double b) {
-        return 0.0;
-    });
+    _operations = {
+        { "π", make_tuple(OperationType::Constant, [](double , double b) {
+                return M_PI;
+            })
+        } ,
+        {
+            "√", make_tuple(OperationType::UnaryOperation, [](double a, double b) {
+                return sqrt(a);
+            })
+        } ,
+        {
+            "×", make_tuple(OperationType::BinaryOperation, [](double a, double b) {
+                return a * b;
+            })
+        } ,
+        {
+            "=",make_tuple(OperationType::Equals, [](double a, double b) {
+                return 0.0;
+            })
+        }
+    };
 }
 
 double CalculatorBrainCpp::getResult(){
