@@ -281,6 +281,8 @@
 		DA07C7FC1DD25F5300C39142 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				DEVELOPMENT_TEAM = CQF3CHX66G;
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
 				OTHER_LDFLAGS = "-ObjC";
@@ -293,6 +295,8 @@
 		DA07C7FD1DD25F5300C39142 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				DEVELOPMENT_TEAM = CQF3CHX66G;
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
 				OTHER_LDFLAGS = "-ObjC";

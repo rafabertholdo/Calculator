@@ -22,7 +22,7 @@
 @synthesize userIsInTheMiddleOfTyping;
 @synthesize program;
 
-CalculatorBrainCpp _brain;
+CalculatorBrainCpp _brain{};
 
 -(void)viewDidLoad{
     [super viewDidLoad];

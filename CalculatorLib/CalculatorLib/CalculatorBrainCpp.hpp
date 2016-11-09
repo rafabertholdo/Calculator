@@ -42,10 +42,10 @@ public:
     string expression();
     bool isPartialResult();
     vector<string> getProgram();
-    void setProgram(vector<string> &program);
+    void setProgram(const vector<string> &program);
     
     void setOperand(const double operand);
-    void performOperation(string symbol);
+    void performOperation(const string &symbol);
 };
 
 
