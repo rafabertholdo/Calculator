@@ -8,9 +8,11 @@
 
 #include "CalculatorBrainCpp.hpp"
 #include <math.h>
+#include <iostream>
+#include <sstream>
 
 CalculatorBrainCpp::CalculatorBrainCpp():_internalProgram(){
-    
+    _nextOperationAddAccumulatorToExpression = true;
     _operations = {
         {
             "π", { OperationType::Constant,
@@ -111,8 +113,9 @@ CalculatorBrainCpp::CalculatorBrainCpp():_internalProgram(){
 }
 
 void CalculatorBrainCpp::clear(){
-    pending.reset(nullptr);
+    _pending.reset(nullptr);
     _expression.clear();
+    _nextOperationAddAccumulatorToExpression = true;
     _internalProgram.clear();
 }
 
@@ -120,12 +123,12 @@ double CalculatorBrainCpp::getResult(){
     return this->_accumulator;
 }
 
-string CalculatorBrainCpp::expression(){
+string CalculatorBrainCpp::getExpression(){
     return this->_expression;
 }
 
 bool CalculatorBrainCpp::isPartialResult(){
-    return this->_partialResult;
+    return _pending != nullptr;
 }
 
 vector<string> CalculatorBrainCpp::getProgram(){
@@ -158,26 +161,76 @@ void CalculatorBrainCpp::performOperation(const string &symbol){
         tie(operationType, func) = _operations[symbol];
         switch (operationType) {
             case OperationType::Constant:
+                //process expression
+                if(!isPartialResult()) {
+                    _expression = symbol;
+                }else{
+                    _expression = _expression + symbol;
+                }
+                _nextOperationAddAccumulatorToExpression = false;
+                
+                //process unary function
                 _accumulator = func(0.0,0.0);
                 break;
             case OperationType::UnaryOperation:
+            {
+                //Process expression
+                if(_expression.empty()) {
+                    stringstream format;
+                    format << symbol << "(" << _accumulator << ")";
+                    _expression = format.str();
+                }else{
+                    stringstream format;
+                    format << symbol << "(" << _expression << ")";
+                    _expression = format.str();
+                }
+                _nextOperationAddAccumulatorToExpression = false;
+                
+                //process unary function
                 _accumulator = func(_accumulator,0.0);
                 break;
+            }
             case OperationType::BinaryOperation:
+            {
+                //process expression
+                if(_nextOperationAddAccumulatorToExpression) {
+                    stringstream format;
+                    format << _accumulator << symbol;
+                    _expression = _expression + format.str();
+                }
+                else {
+                    _expression = _expression  + symbol;
+                    _nextOperationAddAccumulatorToExpression = true;
+                }
+                
+                //process binary function
                 performPendingOperation();
-                this->pending = unique_ptr<PendingBinaryInformationInfoCpp>(new PendingBinaryInformationInfoCpp(func, _accumulator));
+                this->_pending = unique_ptr<PendingBinaryInformationInfoCpp>(new PendingBinaryInformationInfoCpp(func, _accumulator));
                 break;
+            }
             case OperationType::Equals:
+            {
+                //process expression
+                if(_nextOperationAddAccumulatorToExpression) {
+                    stringstream format;
+                    format << _expression << _accumulator;
+                    _expression = format.str();
+                }
+                _nextOperationAddAccumulatorToExpression = false;
+                
+                //process equals
                 performPendingOperation();
                 break;
+            }
+                
         }
     }
 }
 
 void CalculatorBrainCpp::performPendingOperation(){
-    if(pending != nullptr){
-        _accumulator = pending->_binaryFunction(pending->_firstOperand, _accumulator);
-        pending.reset(nullptr);
+    if(_pending != nullptr){
+        _accumulator = _pending->_binaryFunction(_pending->_firstOperand, _accumulator);
+        _pending.reset(nullptr);
     }
 }
 

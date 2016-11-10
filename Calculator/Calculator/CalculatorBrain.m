@@ -93,7 +93,7 @@ typedef double (^BinaryBlock)(double,double);
 -(void)clear{
     self.pending = nil;
     _expression = @"";
-    _nextOperationAddAccumulatorToExpression = YES;
+    _nextOperationAddAccumulatorToExpression = YES; 
     [_internalProgram removeAllObjects];
 }
 

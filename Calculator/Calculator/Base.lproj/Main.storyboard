@@ -686,6 +686,7 @@
                     </view>
                     <connections>
                         <outlet property="display" destination="uxt-ed-cmQ" id="Zqh-g2-kJK"/>
+                        <outlet property="expression" destination="tGV-X5-2ds" id="hfC-gP-86g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Np-c7-LuB" userLabel="First Responder" sceneMemberID="firstResponder"/>

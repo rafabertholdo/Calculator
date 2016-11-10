@@ -11,6 +11,7 @@
 
 @interface CppViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *display;
+@property (weak, nonatomic) IBOutlet UILabel *expression;
 @property (nonatomic) BOOL userIsInTheMiddleOfTyping;
 @property (nonatomic) double displayValue;
 @property (nonatomic, strong) NSArray* program;
@@ -86,11 +87,9 @@ CalculatorBrainCpp _brain{};
 
 -(void)sync{
     self.displayValue = _brain.getResult();
-    /*
-     self.expression.text = _brain.expression;
-     self.expression.text = [self.expression.text stringByAppendingString:_brain.isPartialResult ? @" ...": @" ="];
-     */
     
+    self.expression.text = [NSString stringWithUTF8String:_brain.getExpression().c_str()] ;
+    self.expression.text = [self.expression.text stringByAppendingString:_brain.isPartialResult() ? @" ...": @" ="];
 }
 
 @end
