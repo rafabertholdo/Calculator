@@ -13,73 +13,99 @@ CalculatorBrainCpp::CalculatorBrainCpp():_internalProgram(){
     
     _operations = {
         {
-            "π", make_tuple(OperationType::Constant, [](auto, auto ) {
-                return M_PI;
-            })
+            "π", { OperationType::Constant,
+                [](auto, auto ) {
+                    return M_PI;
+                }
+            }
         } ,
         {
-            "e", make_tuple(OperationType::Constant, [](auto,auto) {
-                return M_E;
-            })
+            "e", { OperationType::Constant,
+                [](auto,auto) {
+                    return M_E;
+                }
+            }
         } ,
         {
-            "√", make_tuple(OperationType::UnaryOperation, [](auto a,auto) {
-                return sin(a);
-            })
+            "√", { OperationType::UnaryOperation,
+                [](auto a,auto) {
+                    return sin(a);
+                }
+            }
         } ,
         {
-            "sin", make_tuple(OperationType::UnaryOperation, [](auto a,auto) {
-                return sin(a);
-            })
+            "sin", { OperationType::UnaryOperation,
+                [](auto a,auto) {
+                    return sin(a);
+                }
+            }
         } ,
         {
-            "cos", make_tuple(OperationType::UnaryOperation, [](auto a,auto) {
-                return cos(a);
-            })
+            "cos", { OperationType::UnaryOperation,
+                [](auto a,auto) {
+                    return cos(a);
+                }
+            }
         } ,
         {
-            "log", make_tuple(OperationType::UnaryOperation, [](auto a,auto) {
-                return log(a);
-            })
+            "log", { OperationType::UnaryOperation,
+                [](auto a,auto) {
+                    return log(a);
+                }
+            }
         } ,
         {
-            "%", make_tuple(OperationType::UnaryOperation, [](auto a,auto) {
-                return a / 100.0;
-            })
+            "%", { OperationType::UnaryOperation,
+                [](auto a,auto) {
+                    return a / 100.0;
+                }
+            }
         } ,
         {
-            "x!", make_tuple(OperationType::UnaryOperation, [](auto a,auto) {
-                return tgammaf(++a);
-            })
+            "x!", { OperationType::UnaryOperation,
+                [](auto a,auto) {
+                    return tgammaf(++a);
+                }
+            }
         } ,
         {
-            "+", make_tuple(OperationType::BinaryOperation, [](auto a,auto b) {
-                return a + b;
-            })
+            "+", { OperationType::BinaryOperation,
+                [](auto a,auto b) {
+                    return a + b;
+                }
+            }
         } ,
         {
-            "-", make_tuple(OperationType::BinaryOperation, [](auto a,auto b) {
-                return a - b;
-            })
+            "-", { OperationType::BinaryOperation,
+                [](auto a,auto b) {
+                    return a - b;
+                }
+            }
         } ,
         {
-            "×", make_tuple(OperationType::BinaryOperation, [](auto a,auto b) {
-                return a * b;
-            })
+            "×", { OperationType::BinaryOperation,
+                [](auto a,auto b) {
+                    return a * b;
+                }
+            }
         } ,
         {
-            "÷", make_tuple(OperationType::BinaryOperation, [](auto a,auto b) {
-                return a / b;
-            })
+            "÷", { OperationType::BinaryOperation,
+                [](auto a,auto b) {
+                    return a / b;
+                }
+            }
         } ,
         {
-            "=",make_tuple(OperationType::Equals, nullptr)
+            "=", { OperationType::Equals, nullptr}
         } ,
         {
-            "C", make_tuple(OperationType::UnaryOperation, [this](auto,auto) {
-                this->clear();
-                return 0.0;
-            })
+            "C", { OperationType::UnaryOperation,
+                [this](auto,auto) {
+                    this->clear();
+                    return 0.0;
+                }
+            }
         }
     };
 }
