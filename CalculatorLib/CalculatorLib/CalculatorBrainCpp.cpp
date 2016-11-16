@@ -11,9 +11,34 @@
 #include <iostream>
 #include <sstream>
 
-CalculatorBrainCpp::CalculatorBrainCpp():_internalProgram(){
-    _nextOperationAddAccumulatorToExpression = true;
-    _operations = {
+class CalculatorBrainCpp::impl{
+public:
+    
+    double _accumulator;
+    string _expression;
+    unique_ptr<PendingBinaryInformationInfoCpp> _pending;
+    vector<string> _internalProgram;
+    map<string, tuple<OperationType, function<double(double,double)>>> _operations;
+    bool _nextOperationAddAccumulatorToExpression;
+    
+    void performPendingOperation(){
+        if(_pending != nullptr){
+            _accumulator = _pending->_binaryFunction(_pending->_firstOperand, _accumulator);
+            _pending.reset(nullptr);
+        }
+    }
+    
+    void clear(){
+        _pending.reset(nullptr);
+        _expression.clear();
+        _nextOperationAddAccumulatorToExpression = true;
+        _internalProgram.clear();
+    }
+};
+
+CalculatorBrainCpp::CalculatorBrainCpp(): pimpl{std::make_unique<impl>()} {
+    pimpl->_nextOperationAddAccumulatorToExpression = true;
+    pimpl->_operations = {
         {
             "π", { OperationType::Constant,
                 [](auto, auto ) {
@@ -104,7 +129,7 @@ CalculatorBrainCpp::CalculatorBrainCpp():_internalProgram(){
         {
             "C", { OperationType::UnaryOperation,
                 [this](auto,auto) {
-                    this->clear();
+                    pimpl->clear();
                     return 0.0;
                 }
             }
@@ -112,125 +137,114 @@ CalculatorBrainCpp::CalculatorBrainCpp():_internalProgram(){
     };
 }
 
-void CalculatorBrainCpp::clear(){
-    _pending.reset(nullptr);
-    _expression.clear();
-    _nextOperationAddAccumulatorToExpression = true;
-    _internalProgram.clear();
+CalculatorBrainCpp::~CalculatorBrainCpp(){
+    
 }
 
 double CalculatorBrainCpp::getResult(){
-    return this->_accumulator;
+    return pimpl->_accumulator;
 }
 
 string CalculatorBrainCpp::getExpression(){
-    return this->_expression;
+    return pimpl->_expression;
 }
 
 bool CalculatorBrainCpp::isPartialResult(){
-    return _pending != nullptr;
+    return pimpl->_pending != nullptr;
 }
 
 vector<string> CalculatorBrainCpp::getProgram(){
-    return this->_internalProgram;
+    return pimpl->_internalProgram;
 }
 
 void CalculatorBrainCpp::setProgram(const vector<string> &program){
-    clear();
+    pimpl->clear();
     for(auto& item : program){
-        if(_operations.count(item)){
+        if(pimpl->_operations.count(item)){
             performOperation(item);
         }else{
             setOperand(stod(item));
         }
     }
-    this->_internalProgram = program;
+    pimpl->_internalProgram = program;
 }
 
 void CalculatorBrainCpp::setOperand(const double operand){
-    _accumulator = operand;
-    _internalProgram.push_back(to_string(operand));
+    pimpl->_accumulator = operand;
+    pimpl->_internalProgram.push_back(to_string(operand));
 }
 
 void CalculatorBrainCpp::performOperation(const string &symbol){
-    if(_operations.count(symbol))
+    if(pimpl->_operations.count(symbol))
     {
-        _internalProgram.push_back(symbol);
+        pimpl->_internalProgram.push_back(symbol);
         OperationType operationType;
         function<double(double,double)> func;
-        tie(operationType, func) = _operations[symbol];
+        tie(operationType, func) = pimpl->_operations[symbol];
         switch (operationType) {
             case OperationType::Constant:
                 //process expression
                 if(!isPartialResult()) {
-                    _expression = symbol;
+                    pimpl->_expression = symbol;
                 }else{
-                    _expression = _expression + symbol;
+                    pimpl->_expression = pimpl->_expression + symbol;
                 }
-                _nextOperationAddAccumulatorToExpression = false;
+                pimpl->_nextOperationAddAccumulatorToExpression = false;
                 
                 //process unary function
-                _accumulator = func(0.0,0.0);
+                pimpl->_accumulator = func(0.0,0.0);
                 break;
             case OperationType::UnaryOperation:
             {
                 //Process expression
-                if(_expression.empty()) {
+                if(pimpl->_expression.empty()) {
                     stringstream format;
-                    format << symbol << "(" << _accumulator << ")";
-                    _expression = format.str();
+                    format << symbol << "(" << pimpl->_accumulator << ")";
+                    pimpl->_expression = format.str();
                 }else{
                     stringstream format;
-                    format << symbol << "(" << _expression << ")";
-                    _expression = format.str();
+                    format << symbol << "(" << pimpl->_expression << ")";
+                    pimpl->_expression = format.str();
                 }
-                _nextOperationAddAccumulatorToExpression = false;
+                pimpl->_nextOperationAddAccumulatorToExpression = false;
                 
                 //process unary function
-                _accumulator = func(_accumulator,0.0);
+                pimpl->_accumulator = func(pimpl->_accumulator,0.0);
                 break;
             }
             case OperationType::BinaryOperation:
             {
                 //process expression
-                if(_nextOperationAddAccumulatorToExpression) {
+                if(pimpl->_nextOperationAddAccumulatorToExpression) {
                     stringstream format;
-                    format << _accumulator << symbol;
-                    _expression = _expression + format.str();
+                    format << pimpl->_accumulator << symbol;
+                    pimpl->_expression = pimpl->_expression + format.str();
                 }
                 else {
-                    _expression = _expression  + symbol;
-                    _nextOperationAddAccumulatorToExpression = true;
+                    pimpl->_expression = pimpl->_expression  + symbol;
+                    pimpl->_nextOperationAddAccumulatorToExpression = true;
                 }
                 
                 //process binary function
-                performPendingOperation();
-                this->_pending = unique_ptr<PendingBinaryInformationInfoCpp>(new PendingBinaryInformationInfoCpp(func, _accumulator));
+                pimpl->performPendingOperation();
+                pimpl->_pending = unique_ptr<PendingBinaryInformationInfoCpp>(new PendingBinaryInformationInfoCpp(func, pimpl->_accumulator));
                 break;
             }
             case OperationType::Equals:
             {
                 //process expression
-                if(_nextOperationAddAccumulatorToExpression) {
+                if(pimpl->_nextOperationAddAccumulatorToExpression) {
                     stringstream format;
-                    format << _expression << _accumulator;
-                    _expression = format.str();
+                    format << pimpl->_expression << pimpl->_accumulator;
+                    pimpl->_expression = format.str();
                 }
-                _nextOperationAddAccumulatorToExpression = false;
+                pimpl->_nextOperationAddAccumulatorToExpression = false;
                 
                 //process equals
-                performPendingOperation();
+                pimpl->performPendingOperation();
                 break;
             }
                 
         }
     }
 }
-
-void CalculatorBrainCpp::performPendingOperation(){
-    if(_pending != nullptr){
-        _accumulator = _pending->_binaryFunction(_pending->_firstOperand, _accumulator);
-        _pending.reset(nullptr);
-    }
-}
-

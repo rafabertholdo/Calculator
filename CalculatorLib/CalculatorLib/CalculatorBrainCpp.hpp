@@ -27,17 +27,14 @@ enum class OperationType{
 };
 
 class CalculatorBrainCpp {
-    double _accumulator;
-    string _expression;
-    unique_ptr<PendingBinaryInformationInfoCpp> _pending;
-    vector<string> _internalProgram;
-    map<string, tuple<OperationType, function<double(double,double)>>> _operations;
-    bool _nextOperationAddAccumulatorToExpression;
     
-    void performPendingOperation();
-    void clear();
+    class impl;
+    unique_ptr<impl> pimpl;
+
 public:
+    
     CalculatorBrainCpp();
+    ~CalculatorBrainCpp();
     double getResult();
     string getExpression();
     bool isPartialResult();
