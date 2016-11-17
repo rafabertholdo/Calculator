@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:CalculatorLib/CalculatorLib.xcodeproj">
+      location = "group:CalculatorLib/build/CalculatorLib.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Calculator/Calculator.xcodeproj">

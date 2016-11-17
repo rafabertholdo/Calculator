@@ -1,0 +1,17 @@
+cmake_minimum_required (VERSION 2.6)
+project(CalculatorLib CXX C)
+
+set(CMAKE_XCODE_ATTRIBUTE_GCC_VERSION "com.apple.compilers.llvm.clang.1_0")
+set(CMAKE_XCODE_ATTRIBUTE_CLANG_CXX_LANGUAGE_STANDARD "c++14")
+set(CMAKE_XCODE_ATTRIBUTE_CLANG_CXX_LIBRARY "libc++")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -stdlib=libc++ -g -Wall")
+
+SET(CMAKE_OSX_SYSROOT iphoneos10.1)
+set(CMAKE_OSX_ARCHITECTURES "armv7" "armv7s" "arm64")
+
+set(CMAKE_XCODE_ATTRIBUTE_IPHONEOS_DEPLOYMENT_TARGET[variant=Debug] "8.0")
+set(CMAKE_XCODE_ATTRIBUTE_IPHONEOS_DEPLOYMENT_TARGET[variant=MinSizeRel] "8.0")
+set(CMAKE_XCODE_ATTRIBUTE_IPHONEOS_DEPLOYMENT_TARGET[variant=RelWithDebInfo] "8.0")
+set(CMAKE_XCODE_ATTRIBUTE_IPHONEOS_DEPLOYMENT_TARGET[variant=Release] "8.0")
+
+add_subdirectory(src)

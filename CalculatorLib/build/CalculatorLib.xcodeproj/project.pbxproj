@@ -1,0 +1,710 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		6836D1C210F84DA58EBEAFB0 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1FBCBD4B123F491FB0D82126 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				34C3E28CA9A3405183C4F4F9 /* CMake Rules */,
+			);
+			dependencies = (
+				2368486FB5A841F5A56226AE /* PBXTargetDependency */,
+				44D2BB75F29B4A579D53273E /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		BB34E024D18D429AA55C3D18 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4EF29617BC9949F6B107C80A /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				D7F84844305647728447FF7C /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		4475C0A45BB9482FA270597E /* /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/src/include/CalculatorBrainCpp.hpp */ = {isa = PBXBuildFile; fileRef = 00F1D3279CF845FFA34E29DF /* /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/src/include/CalculatorBrainCpp.hpp */; };
+		6541D0B3246D45A396E4A12A /* /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/src/include/PendingBinaryInformationInfoCpp.hpp */ = {isa = PBXBuildFile; fileRef = 99CC13D129034C03994818A6 /* /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/src/include/PendingBinaryInformationInfoCpp.hpp */; };
+		961452E4767F473DA72B0342 /* /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/src/CalculatorBrainCpp.cpp */ = {isa = PBXBuildFile; fileRef = 2DCD84B8EEDA4EA4848D6425 /* /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/src/CalculatorBrainCpp.cpp */; };
+		C734393AEFFB4A69A82C9665 /* /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 22F1313866A24DEFBE8F058C /* /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/src/CMakeLists.txt */; };
+		F99706CDF49846739EC53DCE /* /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/src/PendingBinaryInformationInfoCpp.cpp */ = {isa = PBXBuildFile; fileRef = 023CBA0C9CE343BBB1B2263A /* /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/src/PendingBinaryInformationInfoCpp.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		030F4982DC4945C988D1DA7C /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		24D54E65F4AC4BC58E867182 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		2B5C31240A7642D0BD9AA244 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		52F050503EEE4AF5B25C6954 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		7135BBB14BC74B8AA987DCD2 = {
+			isa = PBXBuildStyle;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		61772500749B414FBC81B72A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57973682CB0842A68AD2E3FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D98687A80E06408CA00F3015;
+			remoteInfo = CalculatorLib;
+		};
+		620C8E012EA8463BB01B6510 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57973682CB0842A68AD2E3FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB34E024D18D429AA55C3D18;
+			remoteInfo = ZERO_CHECK;
+		};
+		95A707DA4F2B4C588C9498D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57973682CB0842A68AD2E3FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB34E024D18D429AA55C3D18;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00F1D3279CF845FFA34E29DF /* /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/src/include/CalculatorBrainCpp.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = CalculatorBrainCpp.hpp; path = src/include/CalculatorBrainCpp.hpp; sourceTree = SOURCE_ROOT; };
+		023CBA0C9CE343BBB1B2263A /* /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/src/PendingBinaryInformationInfoCpp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PendingBinaryInformationInfoCpp.cpp; path = src/PendingBinaryInformationInfoCpp.cpp; sourceTree = SOURCE_ROOT; };
+		22F1313866A24DEFBE8F058C /* /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		2C3AB5A7C9C7410596153CC5 /* CalculatorLib */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCalculatorLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DCD84B8EEDA4EA4848D6425 /* /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/src/CalculatorBrainCpp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CalculatorBrainCpp.cpp; path = src/CalculatorBrainCpp.cpp; sourceTree = SOURCE_ROOT; };
+		99CC13D129034C03994818A6 /* /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/src/include/PendingBinaryInformationInfoCpp.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = PendingBinaryInformationInfoCpp.hpp; path = src/include/PendingBinaryInformationInfoCpp.hpp; sourceTree = SOURCE_ROOT; };
+		AF038F0EBC86497E91BFEB14 /* /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D2163A5C2A90482B86DA57AB /* /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		07E41EDE9C4F4AC69BC36FE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C3AB5A7C9C7410596153CC5 /* CalculatorLib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		114CE9A8D496478888DBEC5D /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		210888EA87AD420FAB03A9DC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				71928830130F4226AC9E2F0F /* ALL_BUILD */,
+				E6B46FD2EBAD47D98D50EE90 /* ZERO_CHECK */,
+				28EE0D610B904934953EBA97 /* CalculatorLib */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		28EE0D610B904934953EBA97 /* CalculatorLib */ = {
+			isa = PBXGroup;
+			children = (
+				A1D9CE15517E4B54A81774BE /* Source Files */,
+				EEEEC3BE3F01411EA6CE521B /* Header Files */,
+				22F1313866A24DEFBE8F058C /* /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/src/CMakeLists.txt */,
+			);
+			name = CalculatorLib;
+			sourceTree = "<group>";
+		};
+		4F9755D0AD2A4FC69948DD7E = {
+			isa = PBXGroup;
+			children = (
+				210888EA87AD420FAB03A9DC /* Sources */,
+				855A6713F89E4600AF54A793 /* Resources */,
+				07E41EDE9C4F4AC69BC36FE2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		71928830130F4226AC9E2F0F /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				114CE9A8D496478888DBEC5D /* CMake Rules */,
+				AF038F0EBC86497E91BFEB14 /* /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		855A6713F89E4600AF54A793 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A1D9CE15517E4B54A81774BE /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				2DCD84B8EEDA4EA4848D6425 /* /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/src/CalculatorBrainCpp.cpp */,
+				023CBA0C9CE343BBB1B2263A /* /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/src/PendingBinaryInformationInfoCpp.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		E6B46FD2EBAD47D98D50EE90 /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				F390B6E4EA084B90BCFABD39 /* CMake Rules */,
+				D2163A5C2A90482B86DA57AB /* /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		EEEEC3BE3F01411EA6CE521B /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				00F1D3279CF845FFA34E29DF /* /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/src/include/CalculatorBrainCpp.hpp */,
+				99CC13D129034C03994818A6 /* /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/src/include/PendingBinaryInformationInfoCpp.hpp */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		F390B6E4EA084B90BCFABD39 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D98687A80E06408CA00F3015 /* CalculatorLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C97B7A4C099142FFB61CDD8A /* Build configuration list for PBXNativeTarget "CalculatorLib" */;
+			buildPhases = (
+				AFD1AF92DACC4455BD235A2B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65F54C5F20954652A3541E0F /* PBXTargetDependency */,
+			);
+			name = CalculatorLib;
+			productName = CalculatorLib;
+			productReference = 2C3AB5A7C9C7410596153CC5 /* CalculatorLib */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57973682CB0842A68AD2E3FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0730;
+			};
+			buildConfigurationList = 113208F479A24BB185A1A252 /* Build configuration list for PBXProject "CalculatorLib" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				2B5C31240A7642D0BD9AA244 /* Debug */,
+				24D54E65F4AC4BC58E867182 /* Release */,
+				030F4982DC4945C988D1DA7C /* MinSizeRel */,
+				52F050503EEE4AF5B25C6954 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 4F9755D0AD2A4FC69948DD7E;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				6836D1C210F84DA58EBEAFB0 /* ALL_BUILD */,
+				BB34E024D18D429AA55C3D18 /* ZERO_CHECK */,
+				D98687A80E06408CA00F3015 /* CalculatorLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34C3E28CA9A3405183C4F4F9 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/build -f /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/build/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		382CA0BDF74B4F1390BF0969 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		630ADAD43EEE48948D8D9A89 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		D7F84844305647728447FF7C /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/build -f /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/build/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFD1AF92DACC4455BD235A2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				961452E4767F473DA72B0342 /* /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/src/CalculatorBrainCpp.cpp */,
+				F99706CDF49846739EC53DCE /* /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/src/PendingBinaryInformationInfoCpp.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2368486FB5A841F5A56226AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D98687A80E06408CA00F3015 /* CalculatorLib */;
+			targetProxy = 61772500749B414FBC81B72A /* PBXContainerItemProxy */;
+		};
+		44D2BB75F29B4A579D53273E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB34E024D18D429AA55C3D18 /* ZERO_CHECK */;
+			targetProxy = 95A707DA4F2B4C588C9498D4 /* PBXContainerItemProxy */;
+		};
+		65F54C5F20954652A3541E0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB34E024D18D429AA55C3D18 /* ZERO_CHECK */;
+			targetProxy = 620C8E012EA8463BB01B6510 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1047299395A1454681FB0A1A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (armv7,armv7s,arm64);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++14 -stdlib=libc++    -Wall        -DNDEBUG -I/Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/src/include   ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CalculatorLib;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/build/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		114F7F53A2D64CAA81FE62A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (armv7,armv7s,arm64);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++14 -stdlib=libc++    -Wall     -DNDEBUG -I/Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/src/include   ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CalculatorLib;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/build/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		136112823F5045EA9DBE7EEF /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		1B2E59DC86F14729B321BAB6 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (armv7,armv7s,arm64);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++14 -stdlib=libc++    -Wall     -DNDEBUG -I/Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/src/include   ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CalculatorLib;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/build/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		2502ABD1606C4F0682ED72DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "armv7 armv7s arm64";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				SDKROOT = iphoneos10.1;
+				SYMROOT = /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/build/build;
+			};
+			name = Release;
+		};
+		46E3E537A2B042A2B547007F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "armv7 armv7s arm64";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				SDKROOT = iphoneos10.1;
+				SYMROOT = /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/build/build;
+			};
+			name = Debug;
+		};
+		634988FBD4FA4ED190265676 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "armv7 armv7s arm64";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				SDKROOT = iphoneos10.1;
+				SYMROOT = /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/build/build;
+			};
+			name = RelWithDebInfo;
+		};
+		6843824059D540A19A74D964 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		7C8995ACFDD447B7870EAF98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		9424D33773C54D59AEA68340 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		AC3718C0605F4B6891A3644F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "armv7 armv7s arm64";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				SDKROOT = iphoneos10.1;
+				SYMROOT = /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/build/build;
+			};
+			name = MinSizeRel;
+		};
+		CA91F7941FD94CC490635A6F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		DB8978340738498397CC2F74 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		DC93285800ED4064A2200D16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		E58936427B87441983B1D0A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		EEFD6D5A8A38439AA8124F2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (armv7,armv7s,arm64);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++14 -stdlib=libc++    -Wall    -I/Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/src/include   ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CalculatorLib;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rafaelgb/Developer/objectOrientedClass/CalculatorLib/build/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		113208F479A24BB185A1A252 /* Build configuration list for PBXProject "CalculatorLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46E3E537A2B042A2B547007F /* Debug */,
+				2502ABD1606C4F0682ED72DE /* Release */,
+				AC3718C0605F4B6891A3644F /* MinSizeRel */,
+				634988FBD4FA4ED190265676 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1FBCBD4B123F491FB0D82126 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6843824059D540A19A74D964 /* Debug */,
+				DC93285800ED4064A2200D16 /* Release */,
+				9424D33773C54D59AEA68340 /* MinSizeRel */,
+				CA91F7941FD94CC490635A6F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4EF29617BC9949F6B107C80A /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E58936427B87441983B1D0A0 /* Debug */,
+				7C8995ACFDD447B7870EAF98 /* Release */,
+				DB8978340738498397CC2F74 /* MinSizeRel */,
+				136112823F5045EA9DBE7EEF /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C97B7A4C099142FFB61CDD8A /* Build configuration list for PBXNativeTarget "CalculatorLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEFD6D5A8A38439AA8124F2A /* Debug */,
+				114F7F53A2D64CAA81FE62A6 /* Release */,
+				1B2E59DC86F14729B321BAB6 /* MinSizeRel */,
+				1047299395A1454681FB0A1A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 57973682CB0842A68AD2E3FA /* Project object */;
+}
